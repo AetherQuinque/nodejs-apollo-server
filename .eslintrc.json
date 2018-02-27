@@ -1,0 +1,35 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 7,
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "globals": { "Class": false, "Promise": false, "Generator": false, "google": false },
+    "plugins": ["prettier", "import", "flowtype"],
+    "extends": ["eslint:recommended"],
+    "rules": {
+      "flowtype/define-flow-type": 1,
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "tabWidth": 2,
+          "useTabs": false,
+          "semi": false
+        }
+      ],
+      "use-isnan": 0
+    },
+    "settings": {
+      "import/resolver": {
+        "babel-module": {}
+      }
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  }

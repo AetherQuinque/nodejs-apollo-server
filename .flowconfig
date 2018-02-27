@@ -1,0 +1,15 @@
+[ignore]
+./__tests__
+./build
+
+[include]
+
+[libs]
+flow-typed/dependecies
+flow-typed
+
+[lints]
+
+[options]
+module.system=haste
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
